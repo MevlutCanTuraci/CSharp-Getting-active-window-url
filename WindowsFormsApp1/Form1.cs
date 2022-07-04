@@ -25,6 +25,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false; // We need to set this setting so that we can use the Worker object.
         }
 
         #region  WINAPI plugins
@@ -38,11 +39,16 @@ namespace WindowsFormsApp1
         #endregion
 
 
+        bool FirstWorking = true;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (listBox1.Items.Count > 20) listBox1.Items.Clear();
 
-            listBox1.Items.Add(ActiveWindowTitle());
+            if (FirstWorking)
+            {
+                FirstWorking = false;
+                bgWorker.RunWorkerAsync();
+            }
 
         }
 
@@ -53,7 +59,7 @@ namespace WindowsFormsApp1
 
         /* ------------------- FUNCTIONS --------------------------  */
 
-        #region FUCTIONS 
+        #region FUNCTIONS 
 
         public string ActiveWindowTitle()
         {
@@ -80,7 +86,7 @@ namespace WindowsFormsApp1
 
             else return "Desktop";
 
-        }         
+        }
 
         private string GetUrl(string allText)
         {
@@ -139,15 +145,7 @@ namespace WindowsFormsApp1
 
                 else
                 {
-                    if (string.IsNullOrEmpty(vp) && string.IsNullOrWhiteSpace(vp))
-                    {
-                        _url = " Waiting in Search Bar..";
-                    }
-
-                    else
-                    {
-                        _url = vp + " -> searched";
-                    }
+                    _url = vp;
                 }
 
                 return _url;
@@ -178,15 +176,7 @@ namespace WindowsFormsApp1
                     {
                         ValuePattern val = ((ValuePattern)editBox.GetCurrentPattern(ValuePattern.Pattern));
 
-                        if ((val.Current.Value).Contains("https") && (val.Current.Value).Contains("http"))
-                        {
-                            _url = val.Current.Value;
-                        }
-
-                        else
-                        {
-                            _url = val.Current.Value + " -> searched";
-                        }
+                        _url = val.Current.Value;
                     }
                 }
             }
@@ -209,5 +199,10 @@ namespace WindowsFormsApp1
 
         #endregion
 
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            listBox1.Items.Add(ActiveWindowTitle());
+            FirstWorking = true;
+        }
     }
 }

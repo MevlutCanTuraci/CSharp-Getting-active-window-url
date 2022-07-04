@@ -20,3 +20,14 @@ C:\Users\DELL\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsAp
 C:\Users\DELL\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\DELL\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\DELL\Downloads\CSharp-Getting-active-window-url-main\CSharp-Getting-active-window-url-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // timer1
@@ -41,11 +42,16 @@
             // 
             // listBox1
             // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(776, 433);
+            this.listBox1.Size = new System.Drawing.Size(800, 450);
             this.listBox1.TabIndex = 0;
+            // 
+            // bgWorker
+            // 
+            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
             // 
             // Form1
             // 
@@ -67,6 +73,7 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.ComponentModel.BackgroundWorker bgWorker;
     }
 }
 
